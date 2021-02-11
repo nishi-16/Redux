@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "ordername":"subway",
+        "place":"albion"
+    },
+    {
+        "id":2,
+        "ordername":"pizza",
+        "place":"jane"
+    },
+    {
+        "id":3,
+        "ordername":"punjab",
+        "place":"brampton"
+    }
+]
