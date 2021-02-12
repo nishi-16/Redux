@@ -1,10 +1,8 @@
-import {combineReducers} from 'redux';
-import dataReducer from '../Data/dataStore';
+import { combineReducers } from "redux";
+import orderReducer from "../Reducers/orderReducer";
 
 const allReducers = combineReducers({
-    order:dataReducer
+    order: orderReducer,
 });
-
-
 
 export default allReducers;

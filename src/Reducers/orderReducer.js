@@ -1,27 +1,27 @@
-const initalState = [
-    {
-        id:1,
-        ordername: "noFood",
-        place: "noLocation"
-    }
-];
+const data = require("../Data/data.json");
 
-const orderReducer = (state=initalState , action) => {
-    const {type , payload} = action;
+const initalState = [data];
 
-    switch(type){
+const orderReducer = (state = initalState, action) => {
+    const { type, payload } = action;
+
+    switch (type) {
         case "SELECTED_ORDER":
-            const copyState = [...state];
+            return {
+                ...state,
+                "orderselected": payload,
+            };
 
-            //find id to display orders
+        //find id to display orders
+        /*
+            const copyState = [...state];
             const i = copyState.findIndex(x => x.id === payload.id)
             copyState.concat([]);
             return [...copyState];
+            */
         default:
-            return state
+            return state;
     }
-
-    return state;
 };
 
 export default orderReducer;
